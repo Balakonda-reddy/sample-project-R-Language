@@ -6,7 +6,7 @@ shinyUI(
         tags$br(),
         
         fluidRow(
-            column(2, sliderInput("precision", "Number of Precision Bits", min = 10, max = 256, 
+            column(2, sliderInput("precision", "Number of Precision Bits", min = 15, max = 256, 
                     value = 10))
         ),
         fluidRow(
