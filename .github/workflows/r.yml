@@ -28,3 +28,7 @@ jobs:
           # token and secret obtained from https://www.shinyapps.io/admin/#/tokens
           accountToken: ${{ secrets.SHINYAPPS_TOKEN }}
           accountSecret: ${{ secrets.SHINYAPPS_SECRET }}
+
+      - name: Delete previous app
+        run: |
+          shinyapps::deleteApp("${{ github.run_number }}-1")
