@@ -31,4 +31,4 @@ jobs:
 
       - name: Delete previous app
         run: |
-          shinyapps::deleteApp("${{ github.run_number }}-1")
+          shinyapps::deleteApp("${{ github.run_number }}")
